@@ -1,5 +1,6 @@
 # Make Your Burger
 
+<<<<<<< HEAD
 ## Sistema para gerenciamento de Hamburguerias
 
 
@@ -17,3 +18,6 @@
 
 * Executar o comando "npm run serve" para renderizar o front-end
 * Executar o comando "npm run back-end" para carregar os arquivos do banco
+=======
+
+>>>>>>> 51502de6d35662d8889b946898019487da85e9bd
