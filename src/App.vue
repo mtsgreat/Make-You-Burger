@@ -1,30 +1,60 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+    <Navbar :logo="logo_src" :alt="app_name"/>
+    <router-view/>
+    <Footer/>
 </template>
 
+
+<script>
+
+import Navbar from './components/Navbar.vue'
+import Footer from './components/Footer.vue'
+
+
+export default {
+  components:{
+    Navbar,
+    Footer,
+  },
+  data(){
+    return {
+      logo_src: "/img/logo.png",
+      app_name: "Make Your Burger"
+    }
+  }
+}
+</script>
+
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
+  :root{
+    --primary-color: #222;
+    --secundary-color: #fcba03;;
+    --border-color: #111;
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  * {
+    font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  .main-container {
+    margin: 50px;
+    min-height: 250px;
+  }
+
+
+  h1{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    border-radius: 0px 0px 100px 0px;
+  }
+
+</style>>
+
+
