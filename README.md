@@ -1,19 +1,19 @@
-# make_your_burger
+# Make Your Burger
 
-## Project setup
-```
-npm install
-```
+## Sistema para gerenciamento de Hamburguerias
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Tecnologias Utilizadas para o desenvolvimento
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* Vue
+* HTML
+* CSS
+* JavaScript
+* Express
+* Json Serve (para simular o Back-End)
+
+
+## Utilização do Projeto
+
+* Executar o comando "npm run serve" para renderizar o front-end
+* Executar o comando "npm run back-end" para carregar os arquivos do banco
